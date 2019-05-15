@@ -36,7 +36,7 @@ const intro = babeViews.intro({
 
 // For most tasks, you need instructions views
 const instructions = babeViews.instructions({
-    trials: 5,
+    trials: 1,
     name: 'instrucions',
     title: 'General Instructions',
     text:  `This is a sample instructions view.
@@ -72,7 +72,7 @@ const post_test = babeViews.postTest({
 
 // The 'thanks' view is crucial; never delete it; it submits the results!
 const thanks = babeViews.thanks({
-    trials: 1,
+    trials: 5,
     name: 'thanks',
     title: 'Thank you for taking part in this experiment!',
     prolificConfirmText: 'Press the button'
@@ -109,6 +109,7 @@ const key_press_trials = babeViews.keyPress({
     name: 'key_press_trials',
     trial_type: 'key_press_trials',
     data: trial_info.keyPress
+
 });
 
 // There are many more templates available:
