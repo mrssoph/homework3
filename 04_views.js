@@ -102,16 +102,14 @@ const thanks = babeViews.thanks({
 
 
 // Here, we initialize a forcedChoice view
-const forced_choice_2A = babeViews.forcedChoice({
+const key_press_trials = babeViews.keyPress({
     // This will use all trials specified in `data`, you can user a smaller value (for testing), but not a larger value
-    trials: trial_info.forced_choice.length,
+    trials: trial_info.keypress.length,
     // name and trial_type should be identical to the variable name
-    name: 'forced_choice_2A',
-    trial_type: 'forced_choice_2A',
-    data: trial_info.forced_choice
+    name: 'key_press_trials',
+    trial_type: 'key_press_trials',
+    data: trial_info.keyPress
 });
 
 // There are many more templates available:
 // forcedChoice, sliderRating, dropdownChoice, testboxInput, ratingScale, imageSelection, sentenceChoice, keyPress, selfPacedReading and selfPacedReading_ratingScale
-
-// If the provided templates are not enough, we can just create custom view templates in 02_custom_views_templates.js and use them here
