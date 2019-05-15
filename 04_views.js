@@ -36,13 +36,13 @@ const intro = babeViews.intro({
 
 // For most tasks, you need instructions views
 const instructions = babeViews.instructions({
-    trials: 1,
+    trials: 5,
     name: 'instrucions',
     title: 'General Instructions',
     text:  `This is a sample instructions view.
             <br />
             <br />
-            Tell your participants what they are to do here.`,
+            Say if the shapes you see are the same.`,
     buttonText: 'go to trials'
 });
 
