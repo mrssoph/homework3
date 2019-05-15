@@ -17,36 +17,36 @@ const key_press_trials = [
         picture: 'C:\Users\Henrique\Desktop\Uni\Experimental Psychology\GitHub\XPLab_2019\homework3\mental_rotation_images\6_150_same',
         key1: 'y',
         key2: 'n',
-        y: 'yes!',
-        n: 'no',
-        expected: 'yes!'
+        y: 'same',
+        n: 'different',
+        expected: 'same'
     }
 	 {
         question: "Same or not?#3",
         picture: 'C:\Users\Henrique\Desktop\Uni\Experimental Psychology\GitHub\XPLab_2019\homework3\mental_rotation_images\8_50_same',
         key1: 'y',
         key2: 'n',
-        y: 'yes!',
-        n: 'no',
-        expected: 'yes!'
+        y: 'same',
+        n: 'different',
+        expected: 'same'
     }
 	 {
         question: "Same or not#4?",
         picture: 'C:\Users\Henrique\Desktop\Uni\Experimental Psychology\GitHub\XPLab_2019\homework3\mental_rotation_images\11_150_same',
         key1: 'y',
         key2: 'n',
-        y: 'yes!',
-        n: 'no',
-        expected: 'yes!'
+        y: 'same',
+        n: 'different',
+        expected: 'same'
     }
 	 {
         question: "Same or not?#5",
         picture: 'C:\Users\Henrique\Desktop\Uni\Experimental Psychology\GitHub\XPLab_2019\homework3\mental_rotation_images\9_150_different',
         key1: 'y',
         key2: 'n',
-        y: 'yes!',
-        n: 'no',
-        expected: 'no'
+        y: 'same',
+        n: 'different',
+        expected: 'different'
     }
 	
 ];
