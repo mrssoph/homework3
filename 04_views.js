@@ -23,14 +23,13 @@ const intro = babeViews.intro({
     trials: 1,
     name: 'intro',
     // If you use JavaScripts Template String `I am a Template String`, you can use HTML <></> and javascript ${} inside
-    text:   `This is a sample introduction view.
+    text:   `HI, welcome to our Experiment!
             <br />
             <br />
-            The introduction view welcomes the participant and gives general information
-            about the experiment. You are in the <strong>${coin}</strong> group.
+            You are in the <strong>${coin}</strong> group.
             <br />
             <br />
-            This is a minimal experiment with one forced choice view. It can serve as a starting point for programming your own experiment.`,
+            This is the starting point of our Experiment, concerning shapes`,
    buttonText: 'Begin the experiment'
 });
 
@@ -39,10 +38,10 @@ const instructions = babeViews.instructions({
     trials: 1,
     name: 'instrucions',
     title: 'General Instructions',
-    text:  `This is a sample instructions view.
+    text:  `Please look carefully at the shapes and decide wether or not they are the same.
             <br />
             <br />
-            Say if the shapes you see are the same.`,
+            Please press the <strong> Y Key </strong> if you think they are exactly the same. If you think they are different, please press the <strong> n Key </strong>.`,
     buttonText: 'go to trials'
 });
 
@@ -72,7 +71,7 @@ const post_test = babeViews.postTest({
 
 // The 'thanks' view is crucial; never delete it; it submits the results!
 const thanks = babeViews.thanks({
-    trials: 5,
+    trials: 1,
     name: 'thanks',
     title: 'Thank you for taking part in this experiment!',
     prolificConfirmText: 'Press the button'
@@ -101,15 +100,14 @@ const thanks = babeViews.thanks({
 */
 
 
-// Here, we initialize a keyPress view
+// Here, we initialize a forcedChoice view
 const key_press_trials = babeViews.keyPress({
     // This will use all trials specified in `data`, you can user a smaller value (for testing), but not a larger value
-    trials: trial_info.keyPress.length,
+    trials: 5,
     // name and trial_type should be identical to the variable name
     name: 'key_press_trials',
     trial_type: 'key_press_trials',
-    data: trial_info.keyPress
-
+    data: trial_info.key_press_trials
 });
 
 // There are many more templates available:
